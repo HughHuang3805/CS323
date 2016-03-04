@@ -1,0 +1,57 @@
+
+Project 1: 1-D array implementation of Stack. You are to implement the Basic Stack Operation 
+		algorithm as taught in the class.
+
+
+********************************
+Language: C++ and JAVA
+
+Due Date: C++	Soft copy:  4/4/2016 Thursday  before 2:00pm // You are done
+Due Date: C++	Hard copy:  4/4/2016 Thursday  in class	// You are done
+
+Due Date: Java	Soft copy:  4/6/2016 Saturday before 2:00pm
+Due Date: Java	Hard copy:  4/6/2016 Thursday in class
+
+********************************
+
+I. Input: a text file contains a list of numbers (positive integers). 
+       **** The name of the input file should be given in argv[1]
+
+********************************
+II. Output: console  
+
+	1) when you push a data on to the stack, write the data to the console,
+	one data per text line.
+
+	2) when you pop a data from the stack, write the data to the console
+	one data per text line.
+
+
+********************************
+III. Data structure:
+
+  - Stack1D:
+	 - top (int)
+ 	 - StackArry (int*), 1-D integer array, 
+			to be dynamically allocated at run time.
+
+     - Stack1D
+	- ~Stack1D
+	- push
+	- pop
+	- isEmpty
+ 			
+Algorihtm steps: Write the algorithm steps given in the class below.
+
+Step 0: Create a cpp skelton program, with all the data structures listed above.
+	   initalizing all variables, 
+	
+		count = 0
+
+Step 1:   
+step 2: 
+step 3:        	 
+:
+:
+:
+       	 
