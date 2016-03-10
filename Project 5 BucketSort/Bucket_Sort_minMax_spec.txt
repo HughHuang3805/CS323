@@ -1,0 +1,90 @@
+
+The Bucket Sort using the minimum buckets: 
+You are to implement the bucket sort algorithm 
+using the minimum buckets as taught in class.
+
+
+**** Language: ** C++ and Java **
+
+Due Date: C++: Soft copy 3/7/2016 (Monday) before midnight
+  	     C++: Hard copy 3/8/2016 (Tuesday) hand in the class
+
+Due Date: Java: Soft copy 3/9/2016 (Wednesday) before midnight
+  	     C++: Hard copy 3/10/2016 (Thursday) hand in the class
+
+Input: a text file contains a list of numbers (positive integers). 
+       **** The name of the input file should be given 
+		C++ in argv[1]
+		Java in args[0]
+
+Output1: a text file contains sorted of the input numbers.
+        **** The name of the output file should be given
+		C++ in argv[2]
+		Java in args[1]
+
+Output2: all the debugging outputs within the program should be written in output2.
+        **** The name of the output file should be given
+		C++ in argv[3]
+		Java in args[2]
+
+Data structure:
+  - A bucketSort class:
+	- minData (int)
+	- maxData (int)
+	- bucketSize (int) 
+	- offSet (int)
+	- bucketAry (int *) //(dynamically allocated of bucketSize and intiallize to 0)
+	methods:
+	- constructor
+     - findMinMax
+	- getIndex
+ 	- printBucketAry // debugging outputs 
+			// print to outfile2
+			// the index from 0 to 10 in one text line, 
+			// then print the bucketAry[0] to bucketAry[19] 
+			// in next text line, line-up with the index in the above.
+
+	- printSortedData 
+			// print the sorted data to outfile1
+			// go thru the the bucketAry to print the sorted data,
+			// including duplicates.
+	- etc.
+	 
+			
+Algorihtm steps:
+
+Step 1: inFile <-- open the input file; 
+	   findMinMax( ) <-- go thru the inFile and find min and max data value.
+	   close the file
+
+step 2: bucketSize <-- compute the minimum bucket size
+	   offSet <-- compute the offset
+
+step 3:  dynamically allocate the bucketAry array of bucketSize and 
+		initiallize the array to zero.
+
+step 4: re-open the input file
+
+step 5: data <-- read one data item at a time from inFile, 
+        
+step 6: index <-- compute the index based on data and offset
+
+step 7: bucketAry[index] ++
+
+step 8: output data and index to *outfile2*, per text line
+
+step 9: repeat step 5-8 while inFile is not empty
+
+step 10: call printBucketAry // debugging prints
+		// print to *outfile2* 
+		// the index from 0 to 18 in one text line, 
+		// then print the bucketAry[0] to bucketAry[18] 
+		// in next text line, line-up with the index in the above.
+
+step 11: call printSortedData
+		// print the sorted data to *outfile1*
+		// go thru the the bucketAry to print the sorted data,
+		// one data per text line, including duplicates.
+      	 
+step 12: close inFile, outfile1 and outfile2.
+
