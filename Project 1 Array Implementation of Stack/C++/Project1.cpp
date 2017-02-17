@@ -9,7 +9,7 @@ using namespace std;
 
 class Stack{
 public:
-	int* stack;
+	int* stack; //dynamic allocation
 	int topOfStack, stackSize;
 	Stack(int size);
 	int top();
@@ -19,13 +19,13 @@ public:
 	~Stack();
 };
 
-Stack::Stack(int size){
+Stack::Stack(int size){//constructor for stack class
 	stack = new int[size];
 	topOfStack = -1;
 	stackSize = size;
 }
 
-int Stack::top(){
+int Stack::top(){//returns the top of the stack
 	return stack[topOfStack];
 }
 
